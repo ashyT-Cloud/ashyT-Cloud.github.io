@@ -18,6 +18,8 @@
 
 <body>
 
+<div id="progress-bar"></div>
+
 <header>
 
     <div class="logo">
@@ -38,38 +40,55 @@
 
 <section id="home" class="hero">
 
-    <div class="hero-content">
+    <div class="container hero-container">
 
-        <p class="subtitle">
-            Cloud & DevOps Engineer
-        </p>
+        <div class="hero-content">
 
-        <h1>
-            Building Scalable Cloud Infrastructure.
-        </h1>
+           <p class="hero-intro">
+               Hi, I'm <span>Ashish 👋</span>
+           </p>
 
-        <p class="hero-text">
+           <h1>Building Reliable<br>Cloud Infrastructure.</h1>
 
-            I build production-ready cloud infrastructure using
-            <strong>AWS</strong>,
-            <strong>Terraform</strong>,
-            <strong>Docker</strong>,
-            <strong>Kubernetes</strong>
-            and modern CI/CD practices.
+           <div class="hero-role">
 
-        </p>
+               Cloud & DevOps Engineer
 
-        <div class="hero-buttons">
+           </div>
 
-            <a href="#projects" class="btn primary">
-                View Projects
-            </a>
+            <p class="hero-description">
+                Designing, automating, and deploying production-ready cloud infrastructure
+                using AWS, Terraform, Docker, Kubernetes, Linux, and modern DevOps practices.
+            </p>
 
-            <a href="assets/AshishThaku-CV.pdf"
-               class="btn secondary"
-               download>
-                Download Resume
-            </a>
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">Explore Projects</a>
+
+                <a href="assets/AshishThaku-CV.pdf"
+                   target="_blank"
+                   class="btn secondary">
+                    Download Resume
+                </a>
+
+            </div>
+
+            <div class="hero-tech">
+
+                <span>AWS</span>
+                <span>Terraform</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Linux</span>
+                <span>GitHub Actions</span>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="assets/ashish-pp.jpg" alt="Ashish Thakur">
 
         </div>
 
@@ -77,7 +96,7 @@
 
 </section>
 
-<section id="about">
+<section id="about" class="reveal">
 
     <div class="container">
 
@@ -136,7 +155,7 @@
 
 </section>
 
-<section id="skills">
+<section id="skills" class="reveal">
 
     <div class="container">
 
@@ -196,7 +215,7 @@
 
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
 
     <div class="container">
 
@@ -379,7 +398,7 @@
 
 </section>
 
-<section id="journey">
+<section id="journey" class="reveal">
 
     <div class="container">
 
@@ -437,13 +456,119 @@
 
 </section>
 
-<section id="contact">
+<section id="github" class="reveal">
 
-    <h2>Contact</h2>
+    <div class="container">
 
-    <p>
-        Coming in Portfolio V2...
-    </p>
+        <h2>GitHub & Open Source</h2>
+
+        <p class="section-intro">
+            I actively build cloud and DevOps projects focused on Infrastructure as Code, containerization,
+            automation, and production-ready deployments. Explore my repositories to see my work in action.
+        </p>
+
+        <div class="github-showcase">
+
+            <div class="github-card">
+
+                <div class="github-icon">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+                <h3>Building in Public</h3>
+
+                <p>
+                    My GitHub showcases hands-on projects covering AWS, Terraform,
+                    Kubernetes, Docker, Linux, CI/CD pipelines, and cloud automation.
+                </p>
+
+                <div class="github-tags">
+
+                    <span>AWS</span>
+                    <span>Terraform</span>
+                    <span>Kubernetes</span>
+                    <span>Docker</span>
+                    <span>Linux</span>
+                    <span>GitHub Actions</span>
+
+                </div>
+
+                <a href="https://github.com/ashyT-Cloud"
+                   target="_blank"
+                   class="github-btn">
+
+                    Visit GitHub Profile →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="reveal">
+
+    <div class="container">
+
+        <h2>Let's Connect</h2>
+
+        <p class="section-intro">
+            I'm always interested in discussing Cloud, DevOps, Infrastructure as Code, and new opportunities.
+        </p>
+
+        <div class="contact-grid">
+
+            <a href="mailto:aashishthakur14609@gmail.com" class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>aashishthakur14609@gmail.com</p>
+
+            </a>
+
+            <a href="https://github.com/ashyT-Cloud"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-brands fa-github"></i>
+
+                <h3>GitHub</h3>
+
+                <p>github.com/ashyT-Cloud</p>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/ashish-thakur-132b00214/"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                <h3>LinkedIn</h3>
+
+                <p>Let's Connect</p>
+
+            </a>
+
+            <a href="assets/AshishThaku-CV.pdf"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-solid fa-file"></i>
+
+                <h3>Resume</h3>
+
+                <p>Download PDF</p>
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
@@ -454,6 +579,10 @@
 </footer>
 
 <script src="script.js"></script>
+
+<button id="backToTop" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 </body>
 </html>
