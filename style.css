@@ -582,3 +582,66 @@ grid-template-columns:1fr;
 }
 
 }
+
+/* ===========================================
+   LEARNING JOURNEY
+=========================================== */
+
+#journey{
+    padding-top:120px;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:60px auto;
+    border-left:3px solid #38bdf8;
+    padding-left:35px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:45px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:-45px;
+    top:8px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#38bdf8;
+}
+
+.timeline-content{
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:16px;
+    padding:25px;
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-5px);
+    border-color:#38bdf8;
+    box-shadow:0 15px 30px rgba(56,189,248,.12);
+}
+
+.timeline-content h3{
+    margin-bottom:10px;
+    color:#fff;
+}
+
+.timeline-content p{
+    text-align:left;
+    color:#cbd5e1;
+}
+
+.upcoming .timeline-dot{
+    background:#f59e0b;
+}
+
+.upcoming .timeline-content{
+    border-color:#f59e0b;
+}
