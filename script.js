@@ -1,19 +1,16 @@
 // Smooth Scroll
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-
-    anchor.addEventListener("click", function(e){
-
+    anchor.addEventListener("click", function(e) {
+        const selector = this.getAttribute("href");
+        if (!selector || selector === "#") return;
+        const target = document.querySelector(selector);
+        if (!target) return;
         e.preventDefault();
-
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-
-            behavior:"smooth"
-
+        target.scrollIntoView({
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
         });
-
     });
-
 });
 
 // Reveal Animation
@@ -59,29 +56,14 @@ window.addEventListener("scroll", ()=>{
 // Back to Top
 
 const topBtn = document.getElementById("backToTop");
-
-window.addEventListener("scroll", ()=>{
-
-    if(window.scrollY > 500){
-
-        topBtn.style.display = "block";
-
-    }else{
-
-        topBtn.style.display = "none";
-
-    }
-
-});
-
-topBtn.addEventListener("click", ()=>{
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
+if (topBtn) {
+    window.addEventListener("scroll", () => {
+        topBtn.style.display = window.scrollY > 500 ? "block" : "none";
     });
-
-});
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+        });
+    });
+}
