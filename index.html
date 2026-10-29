@@ -24,21 +24,23 @@
 
 <div id="progress-bar"></div>
 
-<header>
+<header id="site-header">
 
     <div class="logo">
         Ashish Thakur<span>.</span>
     </div>
 
-    <nav>
+    <nav id="site-nav" aria-label="Main navigation">
 
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
         <a href="#contact">Contact</a>
 
     </nav>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
 
 </header>
 
@@ -454,10 +456,21 @@
         <h2>Learning Journey</h2>
 
         <p class="section-intro">
-            My hands-on roadmap in Cloud and DevOps, with each project building on the previous one.
+            From creative programming projects to cloud infrastructure and DevOps automation — a hands-on journey of building and learning.
         </p>
 
         <div class="timeline">
+
+            <div class="timeline-item completed">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="journey-kicker">Creative coding</span>
+                    <h3>🚀 Game Night — Space Shooter &amp; Jenkins CI/CD</h3>
+                    <p>Built a browser-based arcade space shooter and an end-to-end Jenkins pipeline on AWS EC2. Validates source files, runs Python unit tests, builds a Docker image, and deploys the game with Nginx.</p>
+                    <p class="journey-link"><a href="https://github.com/ashyT-Cloud/game-night-jenkins-cicd" target="_blank" rel="noopener noreferrer">Explore repository and CI/CD pipeline →</a></p>
+                    <div class="badges journey-badges"><span>HTML5</span><span>JavaScript</span><span>Jenkins</span><span>AWS EC2</span><span>Docker</span><span>Nginx</span><span>Python Tests</span></div>
+                </div>
+            </div>
 
             <div class="timeline-item completed">
                 <div class="timeline-dot"></div>
@@ -499,7 +512,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item Completed">
+            <div class="timeline-item completed">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>Amazon EKS using Argo CD</h3>
@@ -508,7 +521,7 @@
             </div>
 
 
-            <div class="timeline-item Completed">
+            <div class="timeline-item completed">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>Production Observability Platform </h3>
@@ -663,7 +676,7 @@
 
 <script src="script.js"></script>
 
-<button id="backToTop" title="Back to Top">
+<button id="backToTop" title="Back to Top" aria-label="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
